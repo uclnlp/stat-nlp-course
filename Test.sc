@@ -2,6 +2,7 @@
  * @author Sebastian Riedel
  */
 var i = 1
+println(i)
 
 
 
