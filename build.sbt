@@ -13,10 +13,14 @@ scalaVersion := "2.10.2"
 
 resolvers ++= Seq(
     "IESL third party" at "https://dev-iesl.cs.umass.edu/nexus/content/repositories/thirdparty/",
+    "UCL snapshots" at "http://homeniscient.cs.ucl.ac.uk:8081/nexus/content/repositories/snapshots/",
     "IESL snapshots" at "https://dev-iesl.cs.umass.edu/nexus/content/repositories/snapshots",
     "IESL releases" at "https://dev-iesl.cs.umass.edu/nexus/content/repositories/releases"
 )
 
+libraryDependencies ++= Seq(
+     "org.riedelcastro.frontlets" %% "frontlets" % "0.6.0-SNAPSHOT"
+)
 
 scalacOptions ++= Seq("-unchecked","-deprecation")
 
