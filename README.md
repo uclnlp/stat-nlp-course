@@ -15,7 +15,7 @@ This assumes that you have [Git](http://git-scm.com/) and [SBT](http://www.scala
 
 # IntelliJ Setup
 
-If you are using [IntelliJ](http://www.jetbrains.com/idea/) you can run the following command to setup the project structure.
+If you are using [IntelliJ](http://www.jetbrains.com/idea/) you can run the following command to automatically setup an IntelliJ project (after you did the setup via the terminal).
 ```
 sbt gen-idea
 ```
