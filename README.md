@@ -9,5 +9,13 @@ Code for the UCL Statistical NLP course
   git clone https://github.com/uclmr/stat-nlp-course.git
   cd stat-nlp-course
   sbt compile
-  sbt gen-idea
 ```
+
+# IntelliJ Setup
+
+```
+sbt gen-idea
+```
+
+![IntelliJ Setup 1](/statnlp-tutorial/src/main/resources/setup/setup1.png)
+![IntelliJ Setup 2](/statnlp-tutorial/src/main/resources/setup/setup2.png)
