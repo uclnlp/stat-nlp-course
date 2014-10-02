@@ -20,9 +20,6 @@ If you are using [IntelliJ](http://www.jetbrains.com/idea/) you can run the foll
 sbt gen-idea
 ```
 
-Afterwards you have to make some manual adjustments to IntelliJ's project setup.
+Afterwards you have to remove `wolfe-build` from IntelliJ's modules in the `Project Structure`.
+![IntelliJ Setup](/statnlp-tutorial/src/main/resources/setup.jpg)
 
-- Change the compile output path of wolfe-build from stat-nlp-course to wolfe
-![IntelliJ Setup 1](/statnlp-tutorial/src/main/resources/setup/setup1.png)
-- Remove wolfe-build as content root
-![IntelliJ Setup 2](/statnlp-tutorial/src/main/resources/setup/setup2.png)
