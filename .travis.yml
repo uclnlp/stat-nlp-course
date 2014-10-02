@@ -9,3 +9,6 @@ script: "sbt test"
 
 #after_script:
 #   - sbt 'test:runMain ml.wolfe.benchmark.AllBenchmarks '$TRAVIS_BUILD_NUMBER' travis '$TRAVIS_BRANCH
+
+notifications:
+  email: false
