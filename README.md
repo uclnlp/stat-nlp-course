@@ -21,5 +21,6 @@ sbt gen-idea
 ```
 
 Afterwards you have to remove `wolfe-build` from IntelliJ's modules in the `Project Structure`.
+
 ![IntelliJ Setup](/statnlp-tutorial/src/main/resources/setup.jpg)
 
