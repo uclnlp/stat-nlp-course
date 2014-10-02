@@ -96,7 +96,7 @@ object BuildSettings {
 }
 
 
-object Build extends Build {
+object StatNLPBuild extends Build {
   import BuildSettings._
 
   lazy val root = Project(
