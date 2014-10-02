@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/uclmr/stat-nlp-course.png?label=ready&title=Ready)](https://waffle.io/uclmr/stat-nlp-course)
 stat-nlp-course
 ===============
 
