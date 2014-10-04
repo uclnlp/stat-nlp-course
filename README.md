@@ -24,3 +24,10 @@ Afterwards you have to remove `wolfe-build` from IntelliJ's modules in the `Proj
 
 ![IntelliJ Setup](/statnlp-tutorial/src/main/resources/setup.jpg)
 
+# Scala Learning Resources
+- http://twitter.github.io/scala_school/
+- http://docs.scala-lang.org/tutorials/scala-for-java-programmers.html
+- http://twitter.github.io/effectivescala/
+- https://www.coursera.org/course/progfun
+- http://www.cs.ucsb.edu/~benh/162/Programming-in-Scala.pdf
+- http://www.scala-lang.org/docu/files/ScalaByExample.pdf
