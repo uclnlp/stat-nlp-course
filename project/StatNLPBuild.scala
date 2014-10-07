@@ -48,7 +48,7 @@ object BuildSettings {
   val globalDependencies = libraryDependencies ++= Seq(
     //"org.scalautils" % "scalautils_2.10" % "2.0",
     //"org.scalatest" %% "scalatest" % "2.1.0" % "test",
-    "org.riedelcastro.frontlets" %% "frontlets" % "0.6.0-SNAPSHOT"
+    //"org.riedelcastro.frontlets" %% "frontlets" % "0.6.0-SNAPSHOT"
   )
 
   val coreDependencies = libraryDependencies ++= Seq(
