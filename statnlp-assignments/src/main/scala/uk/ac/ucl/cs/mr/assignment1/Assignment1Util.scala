@@ -3,6 +3,10 @@ package uk.ac.ucl.cs.mr.assignment1
 import java.io.File
 
 import ml.wolfe.nlp.{Document, Sentence, Token, _}
+import org.json4s.NoTypeHints
+import org.json4s.native.Serialization
+import org.json4s.native.Serialization.{read, write}
+import uk.ac.ucl.cs.mr.assignment1.Assignment1.LanguageModel
 import scala.io.{Source, Codec}
 
 /**
@@ -74,11 +78,24 @@ object Assignment1Util {
    * @return the n-1 gram counts.
    */
   def getNMinus1Counts(counts: Counts): Counts = ???
+
+
+
+  //will be provided soon, so nothing to do for you here
+  def serialize(lm: LanguageModel, ngrams: Seq[NGram]) = {
+    val dictionary: Seq[String] = ???
+
+    for {
+      ngram <- ngrams
+      word <- dictionary
+    } {
+      lm.prob(word, ngram)
+      //do serialization here
+
+      //use read and write
+    }
+  }
 }
-
-
-
-
 
 
 

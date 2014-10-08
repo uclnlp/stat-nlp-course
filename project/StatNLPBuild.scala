@@ -47,7 +47,8 @@ object BuildSettings {
 
   val globalDependencies = libraryDependencies ++= Seq(
     "org.scalautils" % "scalautils_2.10" % "2.0",
-    "org.scalatest" %% "scalatest" % "2.1.0" % "test"
+    "org.scalatest" %% "scalatest" % "2.1.0" % "test",
+    "org.json4s" %% "json4s-native" % "3.2.10"
     //"org.riedelcastro.frontlets" %% "frontlets" % "0.6.0-SNAPSHOT"
   )
 
