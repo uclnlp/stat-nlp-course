@@ -103,13 +103,21 @@ object StatNLPBuild extends Build {
     id = "statnlp",
     base = file("."),
     settings = Project.defaultSettings ++ generalSettings
-  ) aggregate(tutorial, wolfe)
+  ) aggregate(tutorial, wolfe, assignments)
 
   lazy val wolfe = RootProject(file("../wolfe"))
 
   lazy val tutorial = Project(
     id = "statnlp-tutorial",
     base = file("statnlp-tutorial"),
+    settings = buildSettings ++ globalSettings
+  ) dependsOn(
+  wolfe % "test->test;compile->compile"
+  )
+
+  lazy val assignments = Project(
+    id = "statnlp-assignments",
+    base = file("statnlp-assignments"),
     settings = buildSettings ++ globalSettings
   ) dependsOn(
   wolfe % "test->test;compile->compile"
