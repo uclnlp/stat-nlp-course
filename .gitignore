@@ -12,6 +12,9 @@ src_managed/
 project/boot/
 project/plugins/project/
 
+# OS X
+.DS_Store
+
 # intellij
 .idea
 .idea/*
