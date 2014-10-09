@@ -7,10 +7,9 @@ Code for the UCL Statistical NLP course
 # Terminal Setup
 This assumes that you have [Git](http://git-scm.com/) and [SBT](http://www.scala-sbt.org/) installed on your machine. Then run the following commands in your working directory.
 ```
-  git clone https://github.com/wolfe-pack/wolfe.git
   git clone https://github.com/uclmr/stat-nlp-course.git
   cd stat-nlp-course
-  sbt compile
+  sbt clean; sbt compile; sbt test
 ```
 
 # IntelliJ Setup
@@ -20,14 +19,11 @@ If you are using [IntelliJ](http://www.jetbrains.com/idea/) you can run the foll
 sbt gen-idea
 ```
 
-Afterwards you have to remove `wolfe-build` from IntelliJ's modules in the `Project Structure`.
-
-![IntelliJ Setup](/statnlp-tutorial/src/main/resources/setup.jpg)
 
 # Scala Learning Resources
-- http://twitter.github.io/scala_school/
-- http://docs.scala-lang.org/tutorials/scala-for-java-programmers.html
-- http://twitter.github.io/effectivescala/
-- https://www.coursera.org/course/progfun
-- http://www.cs.ucsb.edu/~benh/162/Programming-in-Scala.pdf
-- http://www.scala-lang.org/docu/files/ScalaByExample.pdf
+* [Twitter Scala School](http://twitter.github.io/scala_school/)
+* [Scala Tutorial for Java Programmers](http://docs.scala-lang.org/tutorials/scala-for-java-programmers.html)
+* [Twitter Effective Scala](http://twitter.github.io/effectivescala/)
+* [Coursera: Functional Programming Principles in Scala](https://www.coursera.org/course/progfun)
+* [Odersky et al. (2008). Programming in Scala](http://www.cs.ucsb.edu/~benh/162/Programming-in-Scala.pdf)
+* [Odersky. (2014). Scala by Example](http://www.scala-lang.org/docu/files/ScalaByExample.pdf)
