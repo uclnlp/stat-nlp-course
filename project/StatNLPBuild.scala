@@ -48,7 +48,10 @@ object BuildSettings {
   val globalDependencies = libraryDependencies ++= Seq(
     "org.scalautils" % "scalautils_2.10" % "2.0",
     "org.scalatest" %% "scalatest" % "2.1.0" % "test",
-    "org.json4s" %% "json4s-native" % "3.2.10"
+    "org.json4s" %% "json4s-native" % "3.2.10",
+    "ml.wolfe" %% "wolfe-core" % "0.4.0-SNAPSHOT",
+    "ml.wolfe" %% "wolfe-nlp" % "0.4.0-SNAPSHOT",
+    "ml.wolfe" %% "wolfe-examples" % "0.4.0-SNAPSHOT"
     //"org.riedelcastro.frontlets" %% "frontlets" % "0.6.0-SNAPSHOT"
   )
 
@@ -64,10 +67,12 @@ object BuildSettings {
 
   val generalSettings =
     Seq(
+      /*
       initialCommands := """
         import ml.wolfe.Wolfe._
         import ml.wolfe.macros.OptimizedOperators._
                          """
+      */
     )
 
   def vmargs = Command.args("vmargs", "<name>") {
@@ -88,7 +93,9 @@ object BuildSettings {
         "IESL third party" at "https://dev-iesl.cs.umass.edu/nexus/content/repositories/thirdparty/",
         "UCL snapshots" at "http://homeniscient.cs.ucl.ac.uk:8081/nexus/content/repositories/snapshots/",
         "IESL snapshots" at "https://dev-iesl.cs.umass.edu/nexus/content/repositories/snapshots",
-        "IESL releases" at "https://dev-iesl.cs.umass.edu/nexus/content/repositories/releases"
+        "IESL releases" at "https://dev-iesl.cs.umass.edu/nexus/content/repositories/releases",
+        "Wolfe Release" at "http://homeniscient.cs.ucl.ac.uk:8081/nexus/content/repositories/releases",
+        "Wolfe Snapshots" at "http://homeniscient.cs.ucl.ac.uk:8081/nexus/content/repositories/snapshots"
         ),
       globalDependencies
     ) ++ generalSettings ++ instrumentSettings //++ coverallsSettings
@@ -104,23 +111,20 @@ object StatNLPBuild extends Build {
     id = "statnlp",
     base = file("."),
     settings = Project.defaultSettings ++ generalSettings
-  ) aggregate(tutorial, wolfe, assignments)
+  ) aggregate(tutorial, assignments)
+  //) aggregate(wolfe, tutorial, assignments)
 
-  lazy val wolfe = RootProject(file("../wolfe"))
+  //lazy val wolfe = RootProject(file("../wolfe"))
 
   lazy val tutorial = Project(
     id = "statnlp-tutorial",
     base = file("statnlp-tutorial"),
     settings = buildSettings ++ globalSettings
-  ) dependsOn(
-  wolfe % "test->test;compile->compile"
-  )
+  ) //dependsOn (wolfe % "test->test;compile->compile;test")
 
   lazy val assignments = Project(
     id = "statnlp-assignments",
     base = file("statnlp-assignments"),
     settings = buildSettings ++ globalSettings
-  ) dependsOn(
-  wolfe % "test->test;compile->compile"
-  )
+  ) //dependsOn (wolfe % "test->test;compile->compile;test")
 }
