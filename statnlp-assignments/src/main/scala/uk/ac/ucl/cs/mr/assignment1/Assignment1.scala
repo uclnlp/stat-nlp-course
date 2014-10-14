@@ -41,6 +41,10 @@ object Assignment1 {
 
   def main(args: Array[String]) {
     println("Hello, world!")
+    //val vocabulary = loadVocabulary("vocabulary.txt")
+    //val history = loadHistory("history.txt")
+    //serialize(lm, history, vocabulary, "output.txt")
+
     //todo
   }
 }
