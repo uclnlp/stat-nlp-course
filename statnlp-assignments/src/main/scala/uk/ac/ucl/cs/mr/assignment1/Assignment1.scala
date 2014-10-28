@@ -1,6 +1,6 @@
 package uk.ac.ucl.cs.mr.assignment1
 
-import ml.wolfe.nlp.Document
+import ml.wolfe.nlp.{CharOffsets, Token, Document}
 
 /**
  * @author Sebastian Riedel
