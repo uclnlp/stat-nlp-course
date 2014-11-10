@@ -51,7 +51,8 @@ object BuildSettings {
     "org.json4s" %% "json4s-native" % "3.2.10",
     "ml.wolfe" %% "wolfe-core" % "0.4.0-SNAPSHOT",
     "ml.wolfe" %% "wolfe-nlp" % "0.4.0-SNAPSHOT",
-    "ml.wolfe" %% "wolfe-examples" % "0.4.0-SNAPSHOT"
+    "ml.wolfe" %% "wolfe-examples" % "0.4.0-SNAPSHOT",
+    "ml.wolfe" %% "wolfe-util" % "0.4.0-SNAPSHOT"
     //"org.riedelcastro.frontlets" %% "frontlets" % "0.6.0-SNAPSHOT"
   )
 
