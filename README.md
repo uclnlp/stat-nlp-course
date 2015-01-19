@@ -1,8 +1,6 @@
-[![Build Status](https://travis-ci.org/uclmr/stat-nlp-course.svg?branch=master)](https://travis-ci.org/uclmr/stat-nlp-course) [![Stories in Ready](https://badge.waffle.io/uclmr/stat-nlp-course.png?label=ready&title=Ready)](https://waffle.io/uclmr/stat-nlp-course)
+[![Build Status](https://travis-ci.org/uclmr/stat-nlp-course.svg?branch=master)](https://travis-ci.org/uclmr/stat-nlp-course) [![Stories in Ready](https://badge.waffle.io/uclmr/stat-nlp-course.png?label=ready&title=Ready)](https://waffle.io/uclmr/stat-nlp-course) [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/uclmr/stat-nlp-course?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 stat-nlp-course
 ===============
-
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/uclmr/stat-nlp-course?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Code for the UCL Statistical NLP course
 
