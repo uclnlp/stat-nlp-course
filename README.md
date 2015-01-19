@@ -2,6 +2,8 @@
 stat-nlp-course
 ===============
 
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/uclmr/stat-nlp-course?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Code for the UCL Statistical NLP course
 
 # Terminal Setup
